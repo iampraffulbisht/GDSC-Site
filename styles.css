@@ -3,13 +3,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Lato&display=swap');
 
-
+  :root {
+    --primary-bg-1: url(bg.png);
+  }
 body {
 	width: 100%;
 	min-height: 100vh;
-	background-image: url(bg.png);
+    background-image: url(bg.png);
     background-repeat: no-repeat;
-    
+    background-size: cover;
 }
 p{
 font-family: 'EB Garamond', serif;
@@ -39,6 +41,9 @@ h1{
     font-weight: bold;
     display: flex;
     justify-content: center;
+    background-color: #F51720;
+    color: #fff;
+    margin-top: 2rem;
   }
 h3 {
     display: flex;
@@ -72,12 +77,12 @@ h4 {
 .event-card {
     display: flex;
     flex-direction: column;
-    width: 768px;
-    /* height: 870px; */
-    background-image: url(bg-banner-3.jpeg);
+    width: 500px;
+    background-image: url(bg-banner.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    background-size: 100% 100%;
     transition: transform 0.2s ease-in-out;
     border-radius: 10px;
     padding: 20px;
@@ -100,12 +105,14 @@ h4 {
 
 .event-banner {
 	width: 100%;
-	aspect-ratio: 1/1;
+	aspect-ratio: 2/1;
 	background-position: center center;
 	background-size: contain;
 	background-repeat: no-repeat;
 	max-height: 487px;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
 }
 .event-banner-wrapper {
     border-radius: 10px; 
